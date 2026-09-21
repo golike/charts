@@ -1,0 +1,55 @@
+.root {
+  .border {
+    > rect {
+      fill: transparent;
+      stroke: #666;
+    }
+  }
+
+  .x-axis {
+    /* .domain */
+    > path {
+      fill: transparent;
+      stroke: transparent;
+    }
+
+    > g {
+      > line {
+        stroke: #ddd;
+      }
+      > text {
+        fill: #666;
+      }
+    }
+  }
+
+  .y-axis {
+    /* .domain */
+    > path {
+      fill: transparent;
+      stroke: transparent;
+    }
+
+    > g {
+      > line {
+        stroke: #ddd;
+      }
+      > text {
+        fill: #666;
+      }
+    }
+  }
+
+  .areas {
+    path {
+      opacity: auto;
+    }
+  }
+
+  .lines {
+    path {
+      fill: transparent;
+      stroke-width: 2px;
+    }
+  }
+}
