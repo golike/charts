@@ -1,5 +1,7 @@
 .root {
   .border {
+    pointer-events: none;
+
     > rect {
       fill: transparent;
       stroke: #666;
@@ -8,6 +10,8 @@
 
   .x-axis {
     /* .domain */
+    pointer-events: none;
+
     > path {
       fill: transparent;
       stroke: transparent;
@@ -25,6 +29,8 @@
 
   .y-axis {
     /* .domain */
+    pointer-events: none;
+
     > path {
       fill: transparent;
       stroke: transparent;
@@ -41,15 +47,34 @@
   }
 
   .areas {
+    pointer-events: none;
+
     path {
       opacity: auto;
     }
   }
 
   .lines {
+    pointer-events: none;
+
     path {
       fill: transparent;
       stroke-width: 2px;
+    }
+  }
+
+  .serieses {
+    pointer-events: none;
+
+    g {
+      path.area {
+        opacity: auto;
+      }
+
+      path.line {
+        fill: transparent;
+        stroke-width: 2px;
+      }
     }
   }
 }

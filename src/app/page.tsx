@@ -23,14 +23,20 @@ range(4).forEach((s) => {
   });
 });
 
-const padding = [4, 64, 24, 4];
+const padding = [4, 32, 16, 4];
 
 export default function Home() {
-  const [isStacked, setIsStacked] = useState(false);
+  const [isStacked, setIsStacked] = useState(true);
+
   return (
     <div className={classes.root}>
       <h1>Charts</h1>
-      <h5>Line Area</h5>
+      <h3>Line Area</h3>
+      <p>
+        This combo chart has built in transitions between stacked and unstacked.
+        It assumes no negative values in the stacked direction and continuous
+        numerical data in the other.
+      </p>
       <button onClick={() => setIsStacked(!isStacked)}>
         {isStacked ? "Unstack" : "Stack"}
       </button>
